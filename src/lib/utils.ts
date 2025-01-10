@@ -13,7 +13,9 @@ export function formatDate(date: Date): string {
   }).format(date);
 }
 
-export function debounce<T extends (...args: Parameters<any>) => ReturnType<T>>(
+type AnyFunction = (...args: unknown[]) => unknown;
+
+export function debounce<T extends AnyFunction>(
   func: T,
   wait: number
 ): (...args: Parameters<T>) => void {
