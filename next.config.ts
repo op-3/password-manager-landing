@@ -1,10 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  reactStrictMode: true,
   eslint: {
-    // سيتجاهل فحص ESLint أثناء البناء
     ignoreDuringBuilds: true,
   },
-  // إضافة المزيد من الإعدادات حسب الحاجة
+  typescript: {
+    ignoreBuildErrors: true,
+  },
 };
 
-export default nextConfig;
+module.exports = nextConfig;

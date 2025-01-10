@@ -1,5 +1,6 @@
 "use client";
-
+import { useEffect } from "react";
+import { motion } from "framer-motion";
 import { ShieldCheck, Lock, Code2 } from "lucide-react";
 
 export default function Security() {
