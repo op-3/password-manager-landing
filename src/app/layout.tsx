@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
 import { IBM_Plex_Sans_Arabic } from "next/font/google";
 import "./globals.css";
-import { ThemeProvider } from "@/components/theme-provider";
+import { ThemeProvider } from "../components/theme-provider";
 
 const ibmPlexSansArabic = IBM_Plex_Sans_Arabic({
   subsets: ["arabic"],
   weight: ["300", "400", "500", "600", "700"],
+  display: "swap",
+  preload: true,
 });
-
 export const metadata: Metadata = {
   title: "Password Manager - مدير كلمات المرور الآمن",
   description: "تطبيق مفتوح المصدر لإدارة كلمات المرور بشكل آمن وسهل",
