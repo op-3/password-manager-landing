@@ -21,7 +21,7 @@ const securityFeatures = [
 
 export default function Security() {
   return (
-    <section id="security" className="py-20 bg-white dark:bg-gray-900">
+    <section className="relative py-20 bg-white dark:bg-gray-900">
       <div className="container mx-auto px-4">
         {/* العنوان الرئيسي */}
         <div className="text-center mb-16">
